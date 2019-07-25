@@ -1,6 +1,7 @@
+var parser = require("./qsp.jison");
 
-function parseQSP() {
-  console.log('parseQSP');
+export function compileQSPCode(qspCode) {
+  var result = parser.parse(qspCode);
+  console.log(result);
+  return result;
 }
-
-export default run;
