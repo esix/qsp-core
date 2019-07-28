@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for index.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="prettify.css" />
+    <link rel="stylesheet" href="base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="index.html">All files</a> index.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">41.49% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>173/417</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">20.16% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>102/506</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">43.42% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>33/76</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">41.18% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>7/17</span>
+      </div>
+    </div>
+    <p class="quiet">
+      Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+    </p>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">235x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">111x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span></td><td class="text"><pre class="prettyprint lang-js">module.exports=function(t){var e={};function r(i){<span class="missing-if-branch" title="if path not taken" >I</span>if(e[i])<span class="cstat-no" title="statement not covered" >return e[i].exports;v</span>ar n=e[i]={i:i,l:!1,exports:{}};return t[i].call(n.exports,n,n.exports,r),n.l=!0,n.exports}return r.m=t,r.c=e,r.d=function(t,e,i){r.o(t,e)||Object.defineProperty(t,e,{enumerable:!0,get:i})},r.r=function(t){"undefined"!=typeof Symbol&amp;&amp;Symbol.toStringTag&amp;&amp;Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},r.t=<span class="fstat-no" title="function not covered" >fu</span>nction(t,e){<span class="cstat-no" title="statement not covered" >if(1&amp;e&amp;&amp;(t=r(t)),8&amp;e)<span class="cstat-no" title="statement not covered" >return t;<span class="cstat-no" title="statement not covered" >i</span></span>f(4&amp;e&amp;&amp;"object"==typeof t&amp;&amp;t&amp;&amp;t.__esModule)<span class="cstat-no" title="statement not covered" >return t;v</span></span>ar i=<span class="cstat-no" title="statement not covered" >Object.create(null);<span class="cstat-no" title="statement not covered" ></span>if(r.r(i),Object.defineProperty(i,"default",{enumerable:!0,value:t}),2&amp;e&amp;&amp;"string"!=typeof t)<span class="cstat-no" title="statement not covered" >for(var n in t)<span class="cstat-no" title="statement not covered" >r.d(i,n,<span class="fstat-no" title="function not covered" >fu</span>nction(e){<span class="cstat-no" title="statement not covered" >return t[e]}</span>.bind(null,n));<span class="cstat-no" title="statement not covered" >r</span></span></span>eturn i}</span>,r.n=<span class="fstat-no" title="function not covered" >fu</span>nction(t){var e=<span class="cstat-no" title="statement not covered" >t&amp;&amp;t.__esModule?<span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >return t.default}</span>:<span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >return t}</span>;<span class="cstat-no" title="statement not covered" ></span>return r.d(e,"a",e),e}</span>,r.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},r.p="",r(r.s=0)}([function(t,e,r){"use strict";r.r(e),r.d(e,"compileQSPCode",function(){return n});var i=r(1);function n(t){return i.parse(t)}},function(t,e,r){var i=function(){function <span class="fstat-no" title="function not covered" >t(</span>t,e){var r;<span class="cstat-no" title="statement not covered" >if(Object.defineProperty(this,"name",{enumerable:!1,writable:!1,value:"JisonParserError"}),null==t&amp;&amp;(t="???"),Object.defineProperty(this,"message",{enumerable:!1,writable:!0,value:t}),this.hash=e,e&amp;&amp;e.exception instanceof Error){var i=<span class="cstat-no" title="statement not covered" >e.exception;<span class="cstat-no" title="statement not covered" ></span>this.message=i.message||t,r=i.stack}<span class="cstat-no" title="statement not covered" ></span>r</span>||(Error.hasOwnProperty("captureStackTrace")?Error.captureStackTrace(this,this.constructor):r=new Error(t).stack),r&amp;&amp;Object.defineProperty(this,"stack",{enumerable:!1,writable:!1,value:r})}</span>function e(t,e,r){r=r||0;for(var i=0;i&lt;e;i++)this.push(t),t+=r}function r(t,e){for(e+=t=this.length-t;t&lt;e;t++)this.push(this[t])}function i(t){for(var e=[],r=0,i=t.length;r&lt;i;r++){var n=t[r];"function"==typeof n?(r++,n.apply(e,t[r])):e.push(n)}return e}"function"==typeof Object.setPrototypeOf?Object.setPrototypeOf(t.prototype,Error.prototype):<span class="branch-1 cbranch-no" title="branch not covered" >t.prototype=Object.create(Error.prototype),</span>t.prototype.constructor=t,t.prototype.name="JisonParserError";var n={trace:<span class="fstat-no" title="function not covered" >fu</span>nction(){},JisonParserError:t,yy:{},options:{type:"lalr",hasPartialLrUpgradeOnConflict:!0,errorRecoveryTokenDiscardCount:3},symbols_:{"!":8,$accept:0,$end:1,"%":9,"(":10,")":11,"*":5,"+":3,"-":4,"/":6,E:12,EOF:1,NUMBER:13,PI:14,"^":7,e:16,error:2,expressions:15},terminals_:{1:"EOF",2:"error",3:"+",4:"-",5:"*",6:"/",7:"^",8:"!",9:"%",10:"(",11:")",12:"E",13:"NUMBER",14:"PI"},TERROR:2,EOF:1,originalQuoteName:null,originalParseError:null,cleanupAfterParse:null,constructParseErrorInfo:null,yyMergeLocationInfo:null,__reentrant_call_depth:0,__error_infos:[],__error_recovery_infos:[],quoteName:<span class="fstat-no" title="function not covered" >fu</span>nction(t){<span class="cstat-no" title="statement not covered" >return'"'+t+'"'}</span>,getSymbolName:<span class="fstat-no" title="function not covered" >fu</span>nction(t){<span class="cstat-no" title="statement not covered" >if(this.terminals_[t])<span class="cstat-no" title="statement not covered" >return this.terminals_[t];v</span></span>ar e=<span class="cstat-no" title="statement not covered" >this.symbols_;<span class="cstat-no" title="statement not covered" ></span>for(var r in e)<span class="cstat-no" title="statement not covered" >if(e[r]===t)<span class="cstat-no" title="statement not covered" >return r;<span class="cstat-no" title="statement not covered" >r</span></span></span>eturn null}</span>,describeSymbol:<span class="fstat-no" title="function not covered" >fu</span>nction(t){<span class="cstat-no" title="statement not covered" >if(t!==this.EOF&amp;&amp;this.terminal_descriptions_&amp;&amp;this.terminal_descriptions_[t])<span class="cstat-no" title="statement not covered" >return this.terminal_descriptions_[t];<span class="cstat-no" title="statement not covered" >i</span></span>f(t===this.EOF)<span class="cstat-no" title="statement not covered" >return"end of input";v</span></span>ar e=<span class="cstat-no" title="statement not covered" >this.getSymbolName(t);<span class="cstat-no" title="statement not covered" ></span>return e?this.quoteName(e):null}</span>,collect_expected_token_set:<span class="fstat-no" title="function not covered" >fu</span>nction(t,e){var r=<span class="cstat-no" title="statement not covered" >this.TERROR,</span>i=<span class="cstat-no" title="statement not covered" >[],</span>n=<span class="cstat-no" title="statement not covered" >{};<span class="cstat-no" title="statement not covered" ></span>if(!e&amp;&amp;this.state_descriptions_&amp;&amp;this.state_descriptions_[t])<span class="cstat-no" title="statement not covered" >return[this.state_descriptions_[t]];<span class="cstat-no" title="statement not covered" >f</span></span>or(var s in this.table[t])<span class="cstat-no" title="statement not covered" >if((s=+s)!==r){var o=<span class="cstat-no" title="statement not covered" >e?s:this.describeSymbol(s);<span class="cstat-no" title="statement not covered" ></span>o&amp;&amp;!n[o]&amp;&amp;(i.push(o),n[o]=!0)}<span class="cstat-no" title="statement not covered" ></span>r</span></span>eturn i}</span>,productions_:function(t){for(var e=[],r=t.pop,i=t.rule,n=0,s=r.length;n&lt;s;n++)e.push([r[n],i[n]]);return e}({pop:i([15,e,[16,12]]),rule:i([2,e,[3,5],e,[2,3],3,e,[1,3]])}),performAction:function(t,e,r,i){var n=this.yy;n.parser,n.lexer;switch(e){<span class="branch-0 cbranch-no" title="branch not covered" >case 0:</span>
+/*! Production::    $accept : expressions $end */
+<span class="cstat-no" title="statement not covered" >this.$=i[r-1];<span class="cstat-no" title="statement not covered" >b</span>reak;c</span>ase 1:
+/*! Production::    expressions : e EOF */
+return this.$=i[r-1],"undefined"!=typeof console?console.log(i[r-1]):<span class="branch-1 cbranch-no" title="branch not covered" >print(i[r-1]),</span>i[r-1];<span class="branch-2 cbranch-no" title="branch not covered" >case 2:</span>
+/*! Production::    e : e "+" e */
+<span class="cstat-no" title="statement not covered" >this.$=i[r-2]+i[r];<span class="cstat-no" title="statement not covered" >b</span>reak;<span class="branch-3 cbranch-no" title="branch not covered" >c</span>ase 3:</span>
+/*! Production::    e : e "-" e */
+<span class="cstat-no" title="statement not covered" >this.$=i[r-2]-i[r];<span class="cstat-no" title="statement not covered" >b</span>reak;<span class="branch-4 cbranch-no" title="branch not covered" >c</span>ase 4:</span>
+/*! Production::    e : e "*" e */
+<span class="cstat-no" title="statement not covered" >this.$=i[r-2]*i[r];<span class="cstat-no" title="statement not covered" >b</span>reak;<span class="branch-5 cbranch-no" title="branch not covered" >c</span>ase 5:</span>
+/*! Production::    e : e "/" e */
+<span class="cstat-no" title="statement not covered" >this.$=i[r-2]/i[r];<span class="cstat-no" title="statement not covered" >b</span>reak;<span class="branch-6 cbranch-no" title="branch not covered" >c</span>ase 6:</span>
+/*! Production::    e : e "^" e */
+<span class="cstat-no" title="statement not covered" >this.$=Math.pow(i[r-2],i[r]);<span class="cstat-no" title="statement not covered" >b</span>reak;<span class="branch-7 cbranch-no" title="branch not covered" >c</span>ase 7:</span>
+/*! Production::    e : e "!" */
+<span class="cstat-no" title="statement not covered" >this.$=function <span class="fstat-no" title="function not covered" >t(</span>e){<span class="cstat-no" title="statement not covered" >return 0==e?1:t(e-1)*e}</span>(i[r-1]);<span class="cstat-no" title="statement not covered" >b</span>reak;<span class="branch-8 cbranch-no" title="branch not covered" >c</span>ase 8:</span>
+/*! Production::    e : e "%" */
+<span class="cstat-no" title="statement not covered" >this.$=i[r-1]/100;<span class="cstat-no" title="statement not covered" >b</span>reak;c</span>ase 9:
+/*! Production::    e : "-" e */
+this.$=-i[r];break;<span class="branch-10 cbranch-no" title="branch not covered" >case 10:</span>
+/*! Production::    e : "(" e ")" */
+<span class="cstat-no" title="statement not covered" >this.$=i[r-1];<span class="cstat-no" title="statement not covered" >b</span>reak;c</span>ase 11:
+/*! Production::    e : NUMBER */
+this.$=Number(t);break;<span class="branch-12 cbranch-no" title="branch not covered" >case 12:</span>
+/*! Production::    e : E */
+<span class="cstat-no" title="statement not covered" >this.$=Math.E;<span class="cstat-no" title="statement not covered" >b</span>reak;<span class="branch-13 cbranch-no" title="branch not covered" >c</span>ase 13:</span>
+/*! Production::    e : PI */
+<span class="cstat-no" title="statement not covered" >this.$=Math.PI}</span>},table:function(t){for(var e=[],r=t.len,i=t.symbol,n=t.type,s=t.state,o=t.mode,l=t.goto,a=0,h=r.length;a&lt;h;a++){for(var c=r[a],u={},f=0;f&lt;c;f++){var y=i.shift();switch(n.shift()){case 2:u[y]=[o.shift(),l.shift()];break;case 0:u[y]=s.shift();break;default:u[y]=[3]}}e.push(u)}return e}({len:i([7,1,8,6,6,e,[0,4],e,[6,5],e,[0,3],8,e,[9,5],0]),symbol:i([4,10,e,[12,5,1],1,1,e,[3,7,1],r,[16,5],16,r,[6,36],r,[49,7],11,r,[58,8],r,[9,37]]),type:i([e,[2,5],0,0,1,e,[2,13],0,r,[6,41],e,[2,48]]),state:i([1,2,e,[16,7,1]]),mode:i([e,[1,56],e,[2,3],r,[8,8],r,[9,10],r,[11,5],r,[9,15],r,[10,3],2]),goto:i([3,4,6,5,e,[7,9,1],r,[13,5],r,[5,30],r,[42,7],23,e,[2,3],r,[9,5],2,e,[3,3],r,[60,7],e,[4,4],r,[9,3],4,e,[5,5],r,[9,3],5,e,[6,6],14,15,6])}),defaultActions:function(t){for(var e={},r=t.idx,i=t.goto,n=0,s=r.length;n&lt;s;n++)e[r[n]]=i[n];return e}({idx:i([e,[5,4,1],14,15,16,23]),goto:i([11,12,13,1,e,[7,4,1]])}),parseError:<span class="fstat-no" title="function not covered" >fu</span>nction(t,e,r){<span class="cstat-no" title="statement not covered" >if(!e.recoverable)<span class="cstat-no" title="statement not covered" >throw"function"==typeof this.trace&amp;&amp;this.trace(t),r||(r=this.JisonParserError),new r(t,e);<span class="cstat-no" title="statement not covered" >"</span></span>function"==typeof this.trace&amp;&amp;this.trace(t),e.destroy()}</span>,parse:function(t){var e,r,i=this,n=new Array(128),s=new Array(128),o=new Array(128),l=this.table,a=0,h=0,c=(this.TERROR,this.EOF),u=(this.options.errorRecoveryTokenDiscardCount,[0,24]);r=this.__lexer__?this.__lexer__:this.__lexer__=Object.create(this.lexer);var f={parseError:void 0,quoteName:void 0,lexer:void 0,parser:void 0,pre_parse:void 0,post_parse:void 0,pre_lex:void 0,post_lex:void 0};function y(){var t=r.fastLex();return"number"!=typeof t&amp;&amp;(<span class="branch-1 cbranch-no" title="branch not covered" >t=i.symbols_[t]||t)</span>,t||<span class="branch-1 cbranch-no" title="branch not covered" >c}</span>"function"!=typeof assert||<span class="branch-1 cbranch-no" title="branch not covered" >assert,</span>this.yyGetSharedState=<span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >return f}</span>,function(t,e){for(var r in e)<span class="cstat-no" title="statement not covered" >void 0===t[r]&amp;&amp;Object.prototype.hasOwnProperty.call(e,r)&amp;&amp;(t[r]=e[r])}</span>(f,this.yy),f.lexer=r,f.parser=this,"function"==typeof f.parseError?<span class="branch-0 cbranch-no" title="branch not covered" >this.parseError=<span class="fstat-no" title="function not covered" >fu</span>nction(t,e,r){<span class="cstat-no" title="statement not covered" >return r||(r=this.JisonParserError),f.parseError.call(this,t,e,r)}</span>:</span>this.parseError=this.originalParseError,"function"==typeof f.quoteName?<span class="branch-0 cbranch-no" title="branch not covered" >this.quoteName=<span class="fstat-no" title="function not covered" >fu</span>nction(t){<span class="cstat-no" title="statement not covered" >return f.quoteName.call(this,t)}</span>:</span>this.quoteName=this.originalQuoteName,this.cleanupAfterParse=function(t,e,i){var l,h;e&amp;&amp;((f.post_parse||this.post_parse)&amp;&amp;(<span class="branch-2 cbranch-no" title="branch not covered" >h=this.constructParseErrorInfo(null,null,null,!1))</span>,f.post_parse&amp;&amp;<span class="branch-1 cbranch-no" title="branch not covered" >void 0!==(l=f.post_parse.call(this,f,t,h))&amp;</span>&amp;(<span class="branch-2 cbranch-no" title="branch not covered" >t=l)</span>,this.post_parse&amp;&amp;<span class="branch-1 cbranch-no" title="branch not covered" >void 0!==(l=this.post_parse.call(this,f,t,h))&amp;</span>&amp;(<span class="branch-2 cbranch-no" title="branch not covered" >t=l)</span>,h&amp;&amp;<span class="branch-1 cbranch-no" title="branch not covered" >h.destroy&amp;</span>&amp;<span class="branch-2 cbranch-no" title="branch not covered" >h.destroy())</span>;<span class="missing-if-branch" title="if path not taken" >I</span>if(this.__reentrant_call_depth&gt;1)<span class="cstat-no" title="statement not covered" >return t;<span class="missing-if-branch" title="if path not taken" >I</span>i</span>f(r.cleanupAfterLex&amp;&amp;r.cleanupAfterLex(i),f&amp;&amp;(f.lexer=void 0,f.parser=void 0,r.yy===f&amp;&amp;(<span class="branch-1 cbranch-no" title="branch not covered" >r.yy=void 0)</span>),f=void 0,this.parseError=this.originalParseError,this.quoteName=this.originalQuoteName,n.length=0,s.length=0,o.length=0,a=0,!i){<span class="cstat-no" title="statement not covered" >for(var c=<span class="cstat-no" title="statement not covered" >this.__error_infos.length-1;</span>c&gt;=0;c--){var u=<span class="cstat-no" title="statement not covered" >this.__error_infos[c];<span class="cstat-no" title="statement not covered" ></span>u&amp;&amp;"function"==typeof u.destroy&amp;&amp;u.destroy()}<span class="cstat-no" title="statement not covered" ></span>t</span>his.__error_infos.length=0}</span>return t},this.constructParseErrorInfo=<span class="fstat-no" title="function not covered" >fu</span>nction(t,e,i,l){var c=<span class="cstat-no" title="statement not covered" >{errStr:t,exception:e,text:r.match,value:r.yytext,token:this.describeSymbol(h)||h,token_id:h,line:r.yylineno,expected:i,recoverable:l,state:_,action:p,new_state:x,symbol_stack:n,state_stack:s,value_stack:o,stack_pointer:a,yy:f,lexer:r,parser:this,destroy:<span class="fstat-no" title="function not covered" >fu</span>nction(){var t=<span class="cstat-no" title="statement not covered" >!!this.recoverable;<span class="cstat-no" title="statement not covered" ></span>for(var e in this)<span class="cstat-no" title="statement not covered" >this.hasOwnProperty(e)&amp;&amp;"object"==typeof e&amp;&amp;(this[e]=void 0);<span class="cstat-no" title="statement not covered" >t</span></span>his.recoverable=t}</span>};<span class="cstat-no" title="statement not covered" ></span>return this.__error_infos.push(c),c}</span>;var _,p,m,g,d,v,b,x,E=<span class="fstat-no" title="function not covered" >fu</span>nction(){var t=<span class="cstat-no" title="statement not covered" >r.lex();<span class="cstat-no" title="statement not covered" ></span>return"number"!=typeof t&amp;&amp;(t=i.symbols_[t]||t),t||c}</span>,k={$:!0,_$:void 0,yy:f},P=!1;try{<span class="missing-if-branch" title="else path not taken" >E</span>if(this.__reentrant_call_depth++,r.setInput(t,f),"function"==typeof r.canIUse)r.canIUse().fastLex&amp;&amp;(E=y);for(o[a]=null,s[a]=0,n[a]=0,++a,e=r.yytext,this.pre_parse&amp;&amp;<span class="branch-1 cbranch-no" title="branch not covered" >this.pre_parse.call(this,f),</span>f.pre_parse&amp;&amp;<span class="branch-1 cbranch-no" title="branch not covered" >f.pre_parse.call(this,f),</span>x=s[a-1];;){if(_=x,this.defaultActions[_])p=2,x=this.defaultActions[_];else <span class="missing-if-branch" title="if path not taken" >I</span>if(h||(h=E()),g=l[_]&amp;&amp;l[_][h]||<span class="branch-2 cbranch-no" title="branch not covered" >u,</span>x=g[1],!(p=g[0])){var S,O=<span class="cstat-no" title="statement not covered" >this.describeSymbol(h)||h,</span>R=<span class="cstat-no" title="statement not covered" >this.collect_expected_token_set(_);<span class="cstat-no" title="statement not covered" ></span>S="number"==typeof r.yylineno?"Parse error on line "+(r.yylineno+1)+": ":"Parse error: ","function"==typeof r.showPosition&amp;&amp;(S+="\n"+r.showPosition(69,10)+"\n"),R.length?S+="Expecting "+R.join(", ")+", got unexpected "+O:S+="Unexpected "+O,d=this.constructParseErrorInfo(S,null,R,!1),void 0!==(m=this.parseError(d.errStr,d,this.JisonParserError))&amp;&amp;(P=m);<span class="cstat-no" title="statement not covered" >b</span>reak}</span>switch(p){<span class="branch-0 cbranch-no" title="branch not covered" >default:<span class="cstat-no" title="statement not covered" >if(p instanceof Array){<span class="cstat-no" title="statement not covered" >d=this.constructParseErrorInfo("Parse Error: multiple actions possible at state: "+_+", token: "+h,null,null,!1),void 0!==(m=this.parseError(d.errStr,d,this.JisonParserError))&amp;&amp;(P=m);<span class="cstat-no" title="statement not covered" >b</span>reak}<span class="cstat-no" title="statement not covered" ></span>d</span>=this.constructParseErrorInfo("Parsing halted. No viable error recovery approach available due to internal system failure.",null,null,!1),void 0!==(m=this.parseError(d.errStr,d,this.JisonParserError))&amp;&amp;(P=m);<span class="cstat-no" title="statement not covered" >b</span>reak;c</span></span>ase 1:n[a]=h,o[a]=r.yytext,s[a]=x,++a,h=0,e=r.yytext;continue;case 2:if(v=(b=this.productions_[x-1])[1],void 0!==(m=this.performAction.call(k,e,x,a-1,o))){P=m;break}a-=v;var w=b[0];n[a]=w,o[a]=k.$,x=l[s[a-1]][w],s[a]=x,++a;continue;<span class="branch-3 cbranch-no" title="branch not covered" >case 3:<span class="cstat-no" title="statement not covered" >-2!==a&amp;&amp;(P=!0,void 0!==o[--a]&amp;&amp;(P=o[a]))}</span></span>break}}catch(t){<span class="cstat-no" title="statement not covered" >if(t instanceof this.JisonParserError)<span class="cstat-no" title="statement not covered" >throw t;<span class="cstat-no" title="statement not covered" >i</span></span>f(r&amp;&amp;"function"==typeof r.JisonLexerError&amp;&amp;t instanceof r.JisonLexerError)<span class="cstat-no" title="statement not covered" >throw t;<span class="cstat-no" title="statement not covered" >d</span></span>=this.constructParseErrorInfo("Parsing aborted due to exception.",t,null,!1),P=!1,void 0!==(m=this.parseError(d.errStr,d,this.JisonParserError))&amp;&amp;(P=m)}</span>finally{P=this.cleanupAfterParse(P,!0,!0),this.__reentrant_call_depth--}return P}};n.originalParseError=n.parseError,n.originalQuoteName=n.quoteName;var s=function(){function <span class="fstat-no" title="function not covered" >t(</span>t,e){var r;<span class="cstat-no" title="statement not covered" >if(Object.defineProperty(this,"name",{enumerable:!1,writable:!1,value:"JisonLexerError"}),null==t&amp;&amp;(t="???"),Object.defineProperty(this,"message",{enumerable:!1,writable:!0,value:t}),this.hash=e,e&amp;&amp;e.exception instanceof Error){var i=<span class="cstat-no" title="statement not covered" >e.exception;<span class="cstat-no" title="statement not covered" ></span>this.message=i.message||t,r=i.stack}<span class="cstat-no" title="statement not covered" ></span>r</span>||(Error.hasOwnProperty("captureStackTrace")?Error.captureStackTrace(this,this.constructor):r=new Error(t).stack),r&amp;&amp;Object.defineProperty(this,"stack",{enumerable:!1,writable:!1,value:r})}</span>return"function"==typeof Object.setPrototypeOf?Object.setPrototypeOf(t.prototype,Error.prototype):<span class="branch-1 cbranch-no" title="branch not covered" >t.prototype=Object.create(Error.prototype),</span>t.prototype.constructor=t,t.prototype.name="JisonLexerError",{EOF:1,ERROR:2,__currentRuleSet__:null,__error_infos:[],__decompressed:!1,done:!1,_backtrack:!1,_input:"",_more:!1,_signaled_error_token:!1,conditionStack:[],match:"",matched:"",matches:!1,yytext:"",offset:0,yyleng:0,yylineno:0,yylloc:null,constructLexErrorInfo:<span class="fstat-no" title="function not covered" >fu</span>nction(t,e,r){<span class="cstat-no" title="statement not covered" >if(t=""+t,null==r&amp;&amp;(r=!(t.indexOf("\n")&gt;0&amp;&amp;t.indexOf("^")&gt;0)),this.yylloc&amp;&amp;r)<span class="cstat-no" title="statement not covered" >if("function"==typeof this.prettyPrintRange){<span class="cstat-no" title="statement not covered" >this.prettyPrintRange(this.yylloc);<span class="cstat-no" title="statement not covered" >/</span>\n\s*$/.test(t)||(t+="\n"),t+="\n  Erroneous area:\n"+this.prettyPrintRange(this.yylloc)}</span>else <span class="cstat-no" title="statement not covered" >if("function"==typeof this.showPosition){var i=<span class="cstat-no" title="statement not covered" >this.showPosition();<span class="cstat-no" title="statement not covered" ></span>i&amp;&amp;(t.length&amp;&amp;"\n"!==t[t.length-1]&amp;&amp;"\n"!==i[0]?t+="\n"+i:t+=i)}</span>v</span></span></span>ar n=<span class="cstat-no" title="statement not covered" >{errStr:t,recoverable:!!e,text:this.match,token:null,line:this.yylineno,loc:this.yylloc,yy:this.yy,lexer:this,destroy:<span class="fstat-no" title="function not covered" >fu</span>nction(){var t=<span class="cstat-no" title="statement not covered" >!!this.recoverable;<span class="cstat-no" title="statement not covered" ></span>for(var e in this)<span class="cstat-no" title="statement not covered" >this.hasOwnProperty(e)&amp;&amp;"object"==typeof e&amp;&amp;(this[e]=void 0);<span class="cstat-no" title="statement not covered" >t</span></span>his.recoverable=t}</span>};<span class="cstat-no" title="statement not covered" ></span>return this.__error_infos.push(n),n}</span>,parseError:<span class="fstat-no" title="function not covered" >fu</span>nction(t,e,r){<span class="cstat-no" title="statement not covered" >if(r||(r=this.JisonLexerError),this.yy){<span class="cstat-no" title="statement not covered" >if(this.yy.parser&amp;&amp;"function"==typeof this.yy.parser.parseError)<span class="cstat-no" title="statement not covered" >return this.yy.parser.parseError.call(this,t,e,r)||this.ERROR;<span class="cstat-no" title="statement not covered" >i</span></span>f("function"==typeof this.yy.parseError)<span class="cstat-no" title="statement not covered" >return this.yy.parseError.call(this,t,e,r)||this.ERROR}<span class="cstat-no" title="statement not covered" ></span></span>t</span>hrow new r(t,e)}</span>,yyerror:<span class="fstat-no" title="function not covered" >fu</span>nction(t){var e=<span class="cstat-no" title="statement not covered" >"";<span class="cstat-no" title="statement not covered" ></span>this.yylloc&amp;&amp;(e=" on line "+(this.yylineno+1));v</span>ar r=<span class="cstat-no" title="statement not covered" >this.constructLexErrorInfo("Lexical error"+e+": "+t,this.options.lexerErrorsAreRecoverable),</span>i=<span class="cstat-no" title="statement not covered" >Array.prototype.slice.call(arguments,1);<span class="cstat-no" title="statement not covered" ></span>return i.length&amp;&amp;(r.extra_error_attributes=i),this.parseError(r.errStr,r,this.JisonLexerError)||this.ERROR}</span>,cleanupAfterLex:function(t){<span class="missing-if-branch" title="if path not taken" >I</span>if(this.setInput("",{}),!t){<span class="cstat-no" title="statement not covered" >for(var e=<span class="cstat-no" title="statement not covered" >this.__error_infos.length-1;</span>e&gt;=0;e--){var r=<span class="cstat-no" title="statement not covered" >this.__error_infos[e];<span class="cstat-no" title="statement not covered" ></span>r&amp;&amp;"function"==typeof r.destroy&amp;&amp;r.destroy()}<span class="cstat-no" title="statement not covered" ></span>t</span>his.__error_infos.length=0}</span>return this},clear:function(){this.yytext="",this.yyleng=0,this.match="",this.matches=!1,this._more=!1,this._backtrack=!1;var t=this.yylloc?this.yylloc.last_column:0;this.yylloc={first_line:this.yylineno+1,first_column:t,last_line:this.yylineno+1,last_column:t,range:[this.offset,this.offset]}},setInput:function(t,e){if(this.yy=e||<span class="branch-1 cbranch-no" title="branch not covered" >this.yy|</span>|<span class="branch-2 cbranch-no" title="branch not covered" >{},</span>!this.__decompressed){for(var r=this.rules,i=0,n=r.length;i&lt;n;i++){"number"==typeof(f=r[i])&amp;&amp;(<span class="branch-1 cbranch-no" title="branch not covered" >r[i]=r[f])</span>}var s=this.conditions;for(var o in s){var l=s[o],a=l.rules,h=(n=a.length,new Array(n+1)),c=new Array(n+1);for(i=0;i&lt;n;i++){var u=a[i],f=r[u];h[i+1]=f,c[i+1]=u}l.rules=c,l.__rule_regexes=h,l.__rule_count=n}this.__decompressed=!0}return this._input=t||"",this.clear(),this._signaled_error_token=!1,this.done=!1,this.yylineno=0,this.matched="",this.conditionStack=["INITIAL"],this.__currentRuleSet__=null,this.yylloc={first_line:1,first_column:0,last_line:1,last_column:0,range:[0,0]},this.offset=0,this},editRemainingInput:<span class="fstat-no" title="function not covered" >fu</span>nction(t,e){var r=<span class="cstat-no" title="statement not covered" >t.call(this,this._input,e);<span class="cstat-no" title="statement not covered" ></span>return"string"!=typeof r?r&amp;&amp;(this._input=""+r):this._input=r,this}</span>,input:<span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >if(!this._input)<span class="cstat-no" title="statement not covered" >return null;v</span></span>ar t=<span class="cstat-no" title="statement not covered" >this._input[0];<span class="cstat-no" title="statement not covered" ></span>this.yytext+=t,this.yyleng++,this.offset++,this.match+=t,this.matched+=t;v</span>ar e=<span class="cstat-no" title="statement not covered" >1,</span>r=<span class="cstat-no" title="statement not covered" >!1;<span class="cstat-no" title="statement not covered" ></span>if("\n"===t)<span class="cstat-no" title="statement not covered" >r=!0;e</span>lse <span class="cstat-no" title="statement not covered" >if("\r"===t){<span class="cstat-no" title="statement not covered" >r=!0;v</span>ar i=<span class="cstat-no" title="statement not covered" >this._input[1];<span class="cstat-no" title="statement not covered" ></span>"\n"===i&amp;&amp;(e++,t+=i,this.yytext+=i,this.yyleng++,this.offset++,this.match+=i,this.matched+=i,this.yylloc.range[1]++)}<span class="cstat-no" title="statement not covered" ></span>r</span></span>eturn r?(this.yylineno++,this.yylloc.last_line++,this.yylloc.last_column=0):this.yylloc.last_column++,this.yylloc.range[1]++,this._input=this._input.slice(e),t}</span>,unput:<span class="fstat-no" title="function not covered" >fu</span>nction(t){var e=<span class="cstat-no" title="statement not covered" >t.length,</span>r=<span class="cstat-no" title="statement not covered" >t.split(/(?:\r\n?|\n)/g);<span class="cstat-no" title="statement not covered" ></span>if(this._input=t+this._input,this.yytext=this.yytext.substr(0,this.yytext.length-e),this.yyleng=this.yytext.length,this.offset-=e,this.match=this.match.substr(0,this.match.length-e),this.matched=this.matched.substr(0,this.matched.length-e),r.length&gt;1){<span class="cstat-no" title="statement not covered" >this.yylineno-=r.length-1,this.yylloc.last_line=this.yylineno+1;v</span>ar i=<span class="cstat-no" title="statement not covered" >this.match,</span>n=<span class="cstat-no" title="statement not covered" >i.split(/(?:\r\n?|\n)/g);<span class="cstat-no" title="statement not covered" ></span>1===n.length&amp;&amp;(n=(i=this.matched).split(/(?:\r\n?|\n)/g)),this.yylloc.last_column=n[n.length-1].length}</span>else <span class="cstat-no" title="statement not covered" >this.yylloc.last_column-=e;<span class="cstat-no" title="statement not covered" >r</span></span>eturn this.yylloc.range[1]=this.yylloc.range[0]+this.yyleng,this.done=!1,this}</span>,more:<span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >return this._more=!0,this}</span>,reject:<span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >if(this.options.backtrack_lexer)<span class="cstat-no" title="statement not covered" >this._backtrack=!0;e</span>lse{var t=<span class="cstat-no" title="statement not covered" >"";<span class="cstat-no" title="statement not covered" ></span>this.yylloc&amp;&amp;(t=" on line "+(this.yylineno+1));v</span>ar e=<span class="cstat-no" title="statement not covered" >this.constructLexErrorInfo("Lexical error"+t+": You can only invoke reject() in the lexer when the lexer is of the backtracking persuasion (options.backtrack_lexer = true).",!1);<span class="cstat-no" title="statement not covered" ></span>this._signaled_error_token=this.parseError(e.errStr,e,this.JisonLexerError)||this.ERROR}<span class="cstat-no" title="statement not covered" ></span>r</span>eturn this}</span>,less:<span class="fstat-no" title="function not covered" >fu</span>nction(t){<span class="cstat-no" title="statement not covered" >return this.unput(this.match.slice(t))}</span>,pastInput:<span class="fstat-no" title="function not covered" >fu</span>nction(t,e){var r=<span class="cstat-no" title="statement not covered" >this.matched.substring(0,this.matched.length-this.match.length);<span class="cstat-no" title="statement not covered" ></span>t&lt;0?t=r.length:t||(t=20),e&lt;0?e=r.length:e||(e=1);v</span>ar i=<span class="cstat-no" title="statement not covered" >(r=r.substr(2*-t-2)).replace(/\r\n|\r/g,"\n").split("\n");<span class="cstat-no" title="statement not covered" ></span>return(r=(i=i.slice(-e)).join("\n")).length&gt;t&amp;&amp;(r="..."+r.substr(-t)),r}</span>,upcomingInput:<span class="fstat-no" title="function not covered" >fu</span>nction(t,e){var r=<span class="cstat-no" title="statement not covered" >this.match;<span class="cstat-no" title="statement not covered" ></span>t&lt;0?t=r.length+this._input.length:t||(t=20),e&lt;0?e=t:e||(e=1),r.length&lt;2*t+2&amp;&amp;(r+=this._input.substring(0,2*t+2));v</span>ar i=<span class="cstat-no" title="statement not covered" >r.replace(/\r\n|\r/g,"\n").split("\n");<span class="cstat-no" title="statement not covered" ></span>return(r=(i=i.slice(0,e)).join("\n")).length&gt;t&amp;&amp;(r=r.substring(0,t)+"..."),r}</span>,showPosition:<span class="fstat-no" title="function not covered" >fu</span>nction(t,e){var r=<span class="cstat-no" title="statement not covered" >this.pastInput(t).replace(/\s/g," "),</span>i=<span class="cstat-no" title="statement not covered" >new Array(r.length+1).join("-");<span class="cstat-no" title="statement not covered" ></span>return r+this.upcomingInput(e).replace(/\s/g," ")+"\n"+i+"^"}</span>,deriveLocationInfo:<span class="fstat-no" title="function not covered" >fu</span>nction(t,e,r,i){var n=<span class="cstat-no" title="statement not covered" >{first_line:1,first_column:0,last_line:1,last_column:0,range:[0,0]};<span class="cstat-no" title="statement not covered" ></span>return t&amp;&amp;(n.first_line=0|t.first_line,n.last_line=0|t.last_line,n.first_column=0|t.first_column,n.last_column=0|t.last_column,t.range&amp;&amp;(n.range[0]=0|t.range[0],n.range[1]=0|t.range[1])),(n.first_line&lt;=0||n.last_line&lt;n.first_line)&amp;&amp;(n.first_line&lt;=0&amp;&amp;e&amp;&amp;(n.first_line=0|e.last_line,n.first_column=0|e.last_column,e.range&amp;&amp;(n.range[0]=0|t.range[1])),(n.last_line&lt;=0||n.last_line&lt;n.first_line)&amp;&amp;r&amp;&amp;(n.last_line=0|r.first_line,n.last_column=0|r.first_column,r.range&amp;&amp;(n.range[1]=0|t.range[0])),n.first_line&lt;=0&amp;&amp;i&amp;&amp;(n.last_line&lt;=0||i.last_line&lt;=n.last_line)&amp;&amp;(n.first_line=0|i.first_line,n.first_column=0|i.first_column,i.range&amp;&amp;(n.range[0]=0|i.range[0])),n.last_line&lt;=0&amp;&amp;i&amp;&amp;(n.first_line&lt;=0||i.first_line&gt;=n.first_line)&amp;&amp;(n.last_line=0|i.last_line,n.last_column=0|i.last_column,i.range&amp;&amp;(n.range[1]=0|i.range[1]))),n.last_line&lt;=0&amp;&amp;(n.first_line&lt;=0?(n.first_line=this.yylloc.first_line,n.last_line=this.yylloc.last_line,n.first_column=this.yylloc.first_column,n.last_column=this.yylloc.last_column,n.range[0]=this.yylloc.range[0],n.range[1]=this.yylloc.range[1]):(n.last_line=this.yylloc.last_line,n.last_column=this.yylloc.last_column,n.range[1]=this.yylloc.range[1])),n.first_line&lt;=0&amp;&amp;(n.first_line=n.last_line,n.first_column=0,n.range[1]=n.range[0]),n.first_column&lt;0&amp;&amp;(n.first_column=0),n.last_column&lt;0&amp;&amp;(n.last_column=n.first_column&gt;0?n.first_column:80),n}</span>,prettyPrintRange:<span class="fstat-no" title="function not covered" >fu</span>nction(t,e,r){<span class="cstat-no" title="statement not covered" >t=this.deriveLocationInfo(t,e,r);v</span>ar i=<span class="cstat-no" title="statement not covered" >(this.matched+this._input).split("\n"),</span>n=<span class="cstat-no" title="statement not covered" >Math.max(1,e?e.first_line:t.first_line-3),</span>s=<span class="cstat-no" title="statement not covered" >Math.max(1,r?r.last_line:t.last_line+1),</span>o=<span class="cstat-no" title="statement not covered" >1+Math.log10(1|s)|0,</span>l=<span class="cstat-no" title="statement not covered" >new Array(o).join(" "),</span>a=<span class="cstat-no" title="statement not covered" >[],</span>h=<span class="cstat-no" title="statement not covered" >i.slice(n-1,s+1).map(<span class="fstat-no" title="function not covered" >fu</span>nction(e,r){var i=<span class="cstat-no" title="statement not covered" >r+n,</span>s=<span class="cstat-no" title="statement not covered" >(l+i).substr(-o)+": "+e,</span>h=<span class="cstat-no" title="statement not covered" >new Array(o+1).join("^"),</span>c=<span class="cstat-no" title="statement not covered" >3,</span>u=<span class="cstat-no" title="statement not covered" >0;<span class="cstat-no" title="statement not covered" ></span>(i===t.first_line?(c+=t.first_column,u=Math.max(2,(i===t.last_line?t.last_column:e.length)-t.first_column+1)):i===t.last_line?u=Math.max(2,t.last_column+1):i&gt;t.first_line&amp;&amp;i&lt;t.last_line&amp;&amp;(u=Math.max(2,e.length+1)),u)&amp;&amp;(s+="\n"+h+new Array(c).join(".")+new Array(u).join("^"),e.trim().length&gt;0&amp;&amp;a.push(r));<span class="cstat-no" title="statement not covered" >r</span>eturn s=s.replace(/\t/g," ")}</span>);<span class="cstat-no" title="statement not covered" ></span>if(a.length&gt;4){var c=<span class="cstat-no" title="statement not covered" >a[1]+1,</span>u=<span class="cstat-no" title="statement not covered" >a[a.length-2]-1,</span>f=<span class="cstat-no" title="statement not covered" >new Array(o+1).join(" ")+"  (...continued...)";<span class="cstat-no" title="statement not covered" ></span>f+="\n"+new Array(o+1).join("-")+"  (---------------)",h.splice(c,u-c+1,f)}<span class="cstat-no" title="statement not covered" ></span>r</span>eturn h.join("\n")}</span>,describeYYLLOC:<span class="fstat-no" title="function not covered" >fu</span>nction(t,e){var r,i=<span class="cstat-no" title="statement not covered" >t.first_line,</span>n=<span class="cstat-no" title="statement not covered" >t.last_line,</span>s=<span class="cstat-no" title="statement not covered" >t.first_column,</span>o=<span class="cstat-no" title="statement not covered" >t.last_column;<span class="cstat-no" title="statement not covered" ></span>if(0===n-i?(r="line "+i+", ",r+=o-s&lt;=1?"column "+s:"columns "+s+" .. "+o):r="lines "+i+"(column "+s+") .. "+n+"(column "+o+")",t.range&amp;&amp;e){var l=<span class="cstat-no" title="statement not covered" >t.range[0],</span>a=<span class="cstat-no" title="statement not covered" >t.range[1]-1;<span class="cstat-no" title="statement not covered" ></span>r+=a&lt;=l?" {String Offset: "+l+"}":" {String Offset range: "+l+" .. "+a+"}"}<span class="cstat-no" title="statement not covered" ></span>r</span>eturn r}</span>,test_match:function(t,e){var r,i,n,s,o;<span class="missing-if-branch" title="else path not taken" >E</span>if(this.options.backtrack_lexer&amp;&amp;(<span class="branch-1 cbranch-no" title="branch not covered" >n={yylineno:this.yylineno,yylloc:{first_line:this.yylloc.first_line,last_line:this.yylloc.last_line,first_column:this.yylloc.first_column,last_column:this.yylloc.last_column,range:this.yylloc.range.slice(0)},yytext:this.yytext,match:this.match,matches:this.matches,matched:this.matched,yyleng:this.yyleng,offset:this.offset,_more:this._more,_input:this._input,yy:this.yy,conditionStack:this.conditionStack.slice(0),done:this.done})</span>,o=(s=t[0]).length,(i=s.split(/(?:\r\n?|\n)/g)).length&gt;1?(<span class="branch-0 cbranch-no" title="branch not covered" >this.yylineno+=i.length-1,this.yylloc.last_line=this.yylineno+1,this.yylloc.last_column=i[i.length-1].length)</span>:this.yylloc.last_column+=o,this.yytext+=s,this.match+=s,this.matched+=s,this.matches=t,this.yyleng=this.yytext.length,this.yylloc.range[1]+=o,this.offset+=o,this._more=!1,this._backtrack=!1,this._input=this._input.slice(o),r=this.performAction.call(this,this.yy,e,this.conditionStack[this.conditionStack.length-1]),this.done&amp;&amp;this._input&amp;&amp;(<span class="branch-2 cbranch-no" title="branch not covered" >this.done=!1)</span>,r)return r;<span class="cstat-no" title="statement not covered" >if(this._backtrack){<span class="cstat-no" title="statement not covered" >for(var l in n)<span class="cstat-no" title="statement not covered" >this[l]=n[l];<span class="cstat-no" title="statement not covered" >r</span></span>eturn this.__currentRuleSet__=null,!1}<span class="cstat-no" title="statement not covered" ></span>r</span>eturn!!this._signaled_error_token&amp;&amp;(r=this._signaled_error_token,this._signaled_error_token=!1,r)}</span>,next:function(){<span class="missing-if-branch" title="if path not taken" >I</span>if(this.done)<span class="cstat-no" title="statement not covered" >return this.clear(),this.EOF;v</span>ar t,e,r,i;this._input||(this.done=!0),this._more||this.clear();var n=this.__currentRuleSet__;<span class="missing-if-branch" title="if path not taken" >I</span>if(!(n||(n=this.__currentRuleSet__=this._currentRules())&amp;&amp;n.rules)){var s=<span class="cstat-no" title="statement not covered" >"";<span class="cstat-no" title="statement not covered" ></span>this.options.trackPosition&amp;&amp;(s=" on line "+(this.yylineno+1));v</span>ar o=<span class="cstat-no" title="statement not covered" >this.constructLexErrorInfo("Internal lexer engine error"+s+': The lex grammar programmer pushed a non-existing condition name "'+this.topState()+'"; this is a fatal error and should be reported to the application programmer team!',!1);<span class="cstat-no" title="statement not covered" ></span>return this.parseError(o.errStr,o,this.JisonLexerError)||this.ERROR}</span>for(var l=n.rules,a=n.__rule_regexes,h=n.__rule_count,c=1;c&lt;=h;c++)if((r=this._input.match(a[c]))&amp;&amp;(!e||<span class="branch-2 cbranch-no" title="branch not covered" >r[0].length&gt;e[0].length)</span>){<span class="missing-if-branch" title="if path not taken" >I</span>if(e=r,i=c,this.options.backtrack_lexer){<span class="cstat-no" title="statement not covered" >if(!1!==(t=this.test_match(r,l[c])))<span class="cstat-no" title="statement not covered" >return t;<span class="cstat-no" title="statement not covered" >i</span></span>f(this._backtrack){<span class="cstat-no" title="statement not covered" >e=void 0;<span class="cstat-no" title="statement not covered" >c</span>ontinue}<span class="cstat-no" title="statement not covered" ></span>r</span>eturn!1}<span class="missing-if-branch" title="else path not taken" >E</span></span>if(!this.options.flex)break}<span class="missing-if-branch" title="else path not taken" >E</span>if(e)return!1!==(t=this.test_match(e,l[i]))&amp;&amp;t;<span class="cstat-no" title="statement not covered" >if(this._input){<span class="cstat-no" title="statement not covered" >s="";<span class="cstat-no" title="statement not covered" >t</span>his.options.trackPosition&amp;&amp;(s=" on line "+(this.yylineno+1));<span class="cstat-no" title="statement not covered" >o</span>=this.constructLexErrorInfo("Lexical error"+s+": Unrecognized text.",this.options.lexerErrorsAreRecoverable);v</span>ar u=<span class="cstat-no" title="statement not covered" >this._input,</span>f=<span class="cstat-no" title="statement not covered" >this.topState(),</span>y=<span class="cstat-no" title="statement not covered" >this.conditionStack.length;<span class="cstat-no" title="statement not covered" ></span>return(t=this.parseError(o.errStr,o,this.JisonLexerError)||this.ERROR)===this.ERROR&amp;&amp;(this.matches||u!==this._input||f!==this.topState()||y!==this.conditionStack.length||this.input()),t}<span class="cstat-no" title="statement not covered" ></span>r</span>eturn this.done=!0,this.clear(),this.EOF}</span>,lex:<span class="fstat-no" title="function not covered" >fu</span>nction(){var t;<span class="cstat-no" title="statement not covered" >for("function"==typeof this.pre_lex&amp;&amp;(t=this.pre_lex.call(this,0)),"function"==typeof this.options.pre_lex&amp;&amp;(t=this.options.pre_lex.call(this,t)||t),this.yy&amp;&amp;"function"==typeof this.yy.pre_lex&amp;&amp;(t=this.yy.pre_lex.call(this,t)||t);!t;)<span class="cstat-no" title="statement not covered" >t=this.next();<span class="cstat-no" title="statement not covered" >r</span></span>eturn this.yy&amp;&amp;"function"==typeof this.yy.post_lex&amp;&amp;(t=this.yy.post_lex.call(this,t)||t),"function"==typeof this.options.post_lex&amp;&amp;(t=this.options.post_lex.call(this,t)||t),"function"==typeof this.post_lex&amp;&amp;(t=this.post_lex.call(this,t)||t),t}</span>,fastLex:function(){for(var t;!t;)t=this.next();return t},canIUse:function(){return{fastLex:!("function"==typeof this.pre_lex||"function"==typeof this.options.pre_lex||this.yy&amp;&amp;"function"==typeof this.yy.pre_lex||this.yy&amp;&amp;"function"==typeof this.yy.post_lex||"function"==typeof this.options.post_lex||"function"==typeof this.post_lex)&amp;&amp;"function"==typeof this.fastLex}},begin:<span class="fstat-no" title="function not covered" >fu</span>nction(t){<span class="cstat-no" title="statement not covered" >return this.pushState(t)}</span>,pushState:<span class="fstat-no" title="function not covered" >fu</span>nction(t){<span class="cstat-no" title="statement not covered" >return this.conditionStack.push(t),this.__currentRuleSet__=null,this}</span>,popState:<span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >return this.conditionStack.length-1&gt;0?(this.__currentRuleSet__=null,this.conditionStack.pop()):this.conditionStack[0]}</span>,topState:<span class="fstat-no" title="function not covered" >fu</span>nction(t){<span class="cstat-no" title="statement not covered" >return(t=this.conditionStack.length-1-Math.abs(t||0))&gt;=0?this.conditionStack[t]:"INITIAL"}</span>,_currentRules:function(){return this.conditionStack.length&amp;&amp;this.conditionStack[this.conditionStack.length-1]?this.conditions[this.conditionStack[this.conditionStack.length-1]]:<span class="branch-1 cbranch-no" title="branch not covered" >this.conditions.INITIAL}</span>,stateStackSize:<span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >return this.conditionStack.length}</span>,options:{trackPosition:!0},JisonLexerError:t,performAction:function(t,e,r){switch(e){<span class="branch-0 cbranch-no" title="branch not covered" >case 0:</span>
+/*! Conditions:: INITIAL */
+/*! Rule::       \s+ */
+<span class="cstat-no" title="statement not covered" >break;d</span>efault:return this.simpleCaseActionClusters[e]}},simpleCaseActionClusters:{
+/*! Conditions:: INITIAL */
+/*! Rule::       [0-9]+(\.[0-9]+)?\b */
+1:13,
+/*! Conditions:: INITIAL */
+/*! Rule::       \* */
+2:5,
+/*! Conditions:: INITIAL */
+/*! Rule::       \/ */
+3:6,
+/*! Conditions:: INITIAL */
+/*! Rule::       - */
+4:4,
+/*! Conditions:: INITIAL */
+/*! Rule::       \+ */
+5:3,
+/*! Conditions:: INITIAL */
+/*! Rule::       \^ */
+6:7,
+/*! Conditions:: INITIAL */
+/*! Rule::       ! */
+7:8,
+/*! Conditions:: INITIAL */
+/*! Rule::       % */
+8:9,
+/*! Conditions:: INITIAL */
+/*! Rule::       \( */
+9:10,
+/*! Conditions:: INITIAL */
+/*! Rule::       \) */
+10:11,
+/*! Conditions:: INITIAL */
+/*! Rule::       PI */
+11:14,
+/*! Conditions:: INITIAL */
+/*! Rule::       E */
+12:12,
+/*! Conditions:: INITIAL */
+/*! Rule::       $ */
+13:1,
+/*! Conditions:: INITIAL */
+/*! Rule::       . */
+14:"INVALID"},rules:[/^(?:\s+)/,/^(?:\d+(\.\d+)?\b)/,/^(?:\*)/,/^(?:\/)/,/^(?:-)/,/^(?:\+)/,/^(?:\^)/,/^(?:!)/,/^(?:%)/,/^(?:\()/,/^(?:\))/,/^(?:PI)/,/^(?:E)/,/^(?:$)/,/^(?:.)/],conditions:{INITIAL:{rules:[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14],inclusive:!0}}}}();function o(){this.yy={}}return n.lexer=s,o.prototype=n,n.Parser=o,new o}();e.parser=i,e.Parser=i.Parser,e.parse=function(){return i.parse.apply(i,arguments)}}]);</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Jul 29 2019 00:52:22 GMT+0300 (GMT+03:00)
+</div>
+</div>
+<script src="prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="sorter.js"></script>
+<script src="block-navigation.js"></script>
+</body>
+</html>

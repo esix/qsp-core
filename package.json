@@ -26,6 +26,7 @@
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "babel-loader": "^8.0.6",
+    "jest": "^24.8.0",
     "jison-gho-loader": "^1.0.2",
     "webpack": "^4.37.0",
     "webpack-cli": "^3.3.6"
